@@ -51,7 +51,7 @@ const  Stats = () =>{
         <button
           onClick={() => setCount(count - 1)}
           disabled={count <= 0}
-          className={`px-3 py-1 rounded-lg text-white font-medium shadow-md transition 
+          className={`px-3 py-1 rounded-lg text-white font-medium cursor-pointer shadow-md transition 
             ${count <= 0 ? 'bg-gray-400 cursor-not-allowed' : 'bg-red-500 hover:bg-red-600'}
           `}
         >
@@ -60,7 +60,7 @@ const  Stats = () =>{
 
         <button
           onClick={() => setCount(count + 1)}
-          className="px-3 py-1 rounded-lg bg-green-500 hover:bg-green-600 text-white font-medium shadow-md transition"
+          className="px-3 py-1 rounded-lg bg-green-500 hover:bg-green-600 cursor-pointer text-white font-medium shadow-md transition"
         >
           Next
         </button>
