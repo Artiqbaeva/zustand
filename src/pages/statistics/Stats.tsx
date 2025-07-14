@@ -5,7 +5,6 @@ const Stats = () => {
   return (
     <div className='stats mt-4'>
         <Statistics/>
-
     </div>
   )
 }

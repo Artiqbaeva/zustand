@@ -35,11 +35,8 @@ export const useStore = create<Store>((set) => ({
 
       const data = await res.json();
 
-      console.log('Login success:', data);
-
       set({ user: data, token: data.accessToken, isLoading: false }); 
       return data.accessToken;
-
 
     } catch (error: any) {
       console.error(error);
